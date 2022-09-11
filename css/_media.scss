@@ -1,0 +1,72 @@
+@media(max-width:576px){
+  .settings{
+    display: none;
+  }
+    header{
+        nav{
+            .right{
+                display: flex;
+                justify-content: end;
+                .menu{
+                    display: inline!important;
+                    color: white;
+                }
+                ul{
+                    li{
+
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        #first{
+            .right{
+                display: none;
+                
+            }
+            padding: 5rem .5rem!important;
+        }
+        #second{
+            
+            p{
+                padding: 0rem !important;
+            }
+        }
+        #third{
+            overflow: hidden;
+            .underline{
+                margin-left: 16rem !important;
+                padding-right: 4rem;
+                background-color: #f46d70;
+                border: 1px solid #f46d70;
+            }
+        }
+        #fourth{
+            .textPart{
+                padding: 5rem 4rem;
+                text-align: center;
+            }
+        }
+        #fifth{
+            .loremPart{
+                padding: 4rem 0rem !important;
+            }
+        }
+        #seventh{
+            overflow: hidden;
+        }
+       #eigth{
+        overflow: hidden;
+        .underline{
+            margin: 0 !important;
+        }
+       }
+    }
+    footer{
+        p{
+            font-size: 12px;
+        }
+    }
+}

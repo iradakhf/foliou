@@ -1,0 +1,451 @@
+@import '_reset.scss';
+@import '_media.scss';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+$primary_font_family: 'Raleway', sans-serif;
+
+.settings{
+    z-index: 4;
+    position: fixed;
+    top: 8rem;
+    left: 0rem;
+    color: #f46d70;
+    font-size: 25px;
+    background-color: white;
+    padding: .5rem;
+}
+header{
+    nav{
+        padding: 2rem 0rem;
+        .left{
+           a{
+            font-size: 28.8px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+           }
+        }
+        .right{
+            .menu{
+                display: none;
+            }
+            ul{
+                display: flex;
+                justify-content: end;
+                li{
+                    padding-left: 2rem;
+                    a{
+                        color: white;
+                        font-family: 'Raleway', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    span{
+                        a{
+                            border: 1px solid white;
+                            border-radius: 2rem;
+                            padding: .5rem 1rem;
+                            &:hover{
+                                background-color: white;
+                                color: #f46d70;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+main{
+    .about{
+        margin-bottom: 8px;
+        font-family: $primary_font_family;
+        letter-spacing: 1.84px;
+        font-weight: 700;
+        font-size: 18.4px;
+    color: rgb(173, 181, 189);
+    text-transform: uppercase;
+    }
+    #first{
+        padding: 10rem 0rem;
+        background: rgb(92,135,191);
+        background: linear-gradient(90deg, rgba(92,135,191,1) 0%, rgba(173,122,150,1) 50%, rgba(244,109,112,1) 100%);
+        .left{
+            padding: 5rem 0rem;
+            h3{
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                font-family: $primary_font_family;
+                font-size: 21px;
+                font-weight: 400;
+                color: white;
+            }
+            h1{
+                margin-bottom: 8px;
+                font-size: 61px;
+                font-family: $primary_font_family;
+                font-weight: 700;
+                color: white;
+            }
+            p{
+                font-size: 20px;
+                font-family: $primary_font_family;
+                font-weight: 300;
+                margin-bottom: 24px;
+                color: white;
+                padding-right: 4rem;
+            }
+            a{
+                
+                    border: 1px solid white;
+                    border-radius: 2rem;
+                    padding: .5rem 3rem;
+                    background-color: white;
+                    color: #f46d70;
+                    
+            }
+
+        }
+        .right{
+            padding: 3rem 0rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #second{
+        padding: 5rem 0rem;
+        h2{
+            color: rgb(33, 37, 41);
+            margin-bottom: 8px;
+            font-family: $primary_font_family;
+            font-weight: 700;
+            font-style: 38px;
+
+        }
+        p{
+            color: rgb(108, 117, 125);
+            margin-bottom: 16px;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 0rem 7rem;
+
+        }
+
+    }
+    #third{
+        background-color: #f8f9fa;
+        .top{
+            padding: 4rem 0rem;
+        }
+
+        .bottom{
+           
+            padding: 1.5rem 0rem;
+            .box{
+                padding: 2rem 0rem;
+                &:hover{
+                    h3{
+                        color: white;
+                    }
+                    p{
+                        color: white;
+                    }
+                    background: rgb(92,135,191);
+        background: linear-gradient(90deg, rgba(92,135,191,1) 0%, rgba(173,122,150,1) 50%, rgba(244,109,112,1) 100%); 
+                }
+                .h3{
+                    margin: 3rem;
+                    position: relative;
+                }
+                .underline{
+                    position: absolute;
+                    padding: 0rem;
+                    margin-left: 9rem;
+                    padding-right: 4rem;
+                    background-color: #f46d70;
+                    border: 1px solid #f46d70;
+                }
+                p{
+                    color: rgb(108, 117, 125);
+                margin-bottom: 16px;
+                font-size: 20px;
+                font-weight: 300;
+                }
+
+            }
+            
+        }
+    }
+    #fourth{
+        overflow: hidden;
+
+        .top{
+            padding-bottom: 12rem;
+            padding-top: 5rem;
+        }
+        .bottom{
+            img{
+                width: 100%;
+            }
+            .textPart{
+                p{
+                    color: rgb(108, 117, 125);
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0rem 0rem;
+        
+                }
+                .altText{
+                    p{
+                        margin: 0;
+                        font-size: 30px;
+                        color: #f46d70;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+    #fifth{
+        padding-top: 8rem;
+        overflow: hidden;
+        .top{
+            .box{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    text-align: center;
+                  padding: 8rem 0rem;             
+                }
+                &:hover{
+                    .overlay{
+                        opacity: .8;
+                    }
+                }
+                padding: 0;
+            }
+
+        }
+        .bottom{
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            h2{
+                color: #f46d70;
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .loremPart{
+            padding: 5rem;
+            background-color: #f8f9fa;
+            p{
+                color: rgb(108, 117, 125);
+                margin-bottom: 16px;
+                font-size: 20px;
+                font-weight: 300;
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                padding-top: 3.5rem;
+            }
+        }
+        #second{
+            span{
+                i{
+                    font-size: 100px;
+                    color: #f46d70;
+                }
+            }
+        }
+        #third{
+            h2{
+                color: white;
+                font-size: 40px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+            }
+            a{
+                border: 1px solid white;
+                padding: .5rem 3rem;
+                color: white;
+                border-radius: 3rem;
+                &:hover{
+                    background-color: white;
+                    color: #f46d70;
+                }
+            }
+            padding: 5rem 0rem;
+            background: rgb(92,135,191);
+            background: linear-gradient(90deg, rgba(92,135,191,1) 0%, rgba(173,122,150,1) 50%, rgba(244,109,112,1) 100%);
+        }
+        #fourth{
+            padding: 4rem 0rem;
+            background-color: #f8f9fa;
+        }
+    }
+    #sixth{
+        overflow: hidden;
+        padding: 4rem 0rem;
+        .top{
+            h2{
+                font-size: 40px;
+            }
+            padding-bottom: 4rem;
+        }
+        .bottom{
+            .box{
+                &:hover{
+                    .overlay{
+                        opacity: .8;
+                    }
+                }
+                position: relative;
+                padding: 0;
+                img{
+                    width: 100%;
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    background-color: #f46d70;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    padding-top: 100px;
+                    opacity: 0;
+                    transition-duration: .6s;
+                }
+            }
+        }
+    }
+    #seventh{
+        .right{
+            .sendNow{
+                text-align: center;
+                p{ 
+                    cursor: pointer;
+                    padding: .5rem 0rem;
+                    border-radius: 4rem;
+                    color: white;
+                    background-color: #f46d70;
+                    transition-duration: .4s;
+                }
+                &:hover{
+                    p{
+
+                        background-color: rgb(50, 169, 173);
+                    }
+                }
+            }
+        
+            input{
+                padding-right: 25rem;
+                margin-bottom: 2rem;
+                font-size: 18px;
+                border: transparent;
+                border-bottom: 1px solid #83878a !important;
+             &:focus{
+                outline-color: transparent;
+             }
+            }
+        }
+        i{
+            margin-right: 2rem;
+            border: 1px solid #f46d70;
+            border-radius: 4rem;
+            background-color: #f46d70;
+            padding: .5rem;
+            color: white;
+        }
+        padding: 2rem 0rem;
+        h2{
+            padding-right: 7rem;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .abt{
+            color: rgb(108, 117, 125);
+            margin-bottom: 16px;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 0rem 0rem;
+        }
+    }
+    #eigth{
+        .inputSec{
+            input{
+                background-color: transparent;
+                border: none;
+            }
+            margin-top: 2rem;
+        }
+        padding: 5rem 0rem;
+        background-color: rgb(34, 34, 34);
+        p{
+            margin-bottom: 16px;
+            margin-top: 2rem;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(108, 117, 125);
+        }
+        a{
+            letter-spacing: 1.6px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $primary_font_family;
+            color: white;
+            &:hover{
+                color: #f46d70;
+            }
+        }
+        .underline{
+            border: 1px solid #83878a;
+            margin-left: 11rem;
+        }
+        .wite{
+            display: inline;
+            color: white;
+            cursor: pointer;
+        
+                padding: 0;
+                margin: 0;
+            
+            &:hover{
+                color: #f46d70;
+            }
+        }
+    }
+}
+footer{
+    overflow: hidden;
+    background-color: black;
+    padding: 1rem 0rem;
+    p{
+        margin: 0;
+    }
+}

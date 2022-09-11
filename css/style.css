@@ -1,0 +1,464 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap");
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  .settings {
+    display: none;
+  }
+  header nav .right {
+    display: flex;
+    justify-content: end;
+  }
+  header nav .right .menu {
+    display: inline !important;
+    color: white;
+  }
+  header nav .right ul li {
+    display: none;
+  }
+  main #first {
+    padding: 5rem 0.5rem !important;
+  }
+  main #first .right {
+    display: none;
+  }
+  main #second p {
+    padding: 0rem !important;
+  }
+  main #third {
+    overflow: hidden;
+  }
+  main #third .underline {
+    margin-left: 16rem !important;
+    padding-right: 4rem;
+    background-color: #f46d70;
+    border: 1px solid #f46d70;
+  }
+  main #fourth .textPart {
+    padding: 5rem 4rem;
+    text-align: center;
+  }
+  main #fifth .loremPart {
+    padding: 4rem 0rem !important;
+  }
+  main #seventh {
+    overflow: hidden;
+  }
+  main #eigth {
+    overflow: hidden;
+  }
+  main #eigth .underline {
+    margin: 0 !important;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
+.settings {
+  z-index: 4;
+  position: fixed;
+  top: 8rem;
+  left: 0rem;
+  color: #f46d70;
+  font-size: 25px;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+header {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+}
+header nav {
+  padding: 2rem 0rem;
+}
+header nav .left a {
+  font-size: 28.8px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+header nav .right .menu {
+  display: none;
+}
+header nav .right ul {
+  display: flex;
+  justify-content: end;
+}
+header nav .right ul li {
+  padding-left: 2rem;
+}
+header nav .right ul li a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+header nav .right ul li span a {
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+header nav .right ul li span a:hover {
+  background-color: white;
+  color: #f46d70;
+}
+
+main .about {
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1.84px;
+  font-weight: 700;
+  font-size: 18.4px;
+  color: rgb(173, 181, 189);
+  text-transform: uppercase;
+}
+main #first {
+  padding: 10rem 0rem;
+  background: rgb(92, 135, 191);
+  background: linear-gradient(90deg, rgb(92, 135, 191) 0%, rgb(173, 122, 150) 50%, rgb(244, 109, 112) 100%);
+}
+main #first .left {
+  padding: 5rem 0rem;
+}
+main #first .left h3 {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: white;
+}
+main #first .left h1 {
+  margin-bottom: 8px;
+  font-size: 61px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+main #first .left p {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-bottom: 24px;
+  color: white;
+  padding-right: 4rem;
+}
+main #first .left a {
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 0.5rem 3rem;
+  background-color: white;
+  color: #f46d70;
+}
+main #first .right {
+  padding: 3rem 0rem;
+}
+main #first .right img {
+  width: 100%;
+}
+main #second {
+  padding: 5rem 0rem;
+}
+main #second h2 {
+  color: rgb(33, 37, 41);
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: 38px;
+}
+main #second p {
+  color: rgb(108, 117, 125);
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0rem 7rem;
+}
+main #third {
+  background-color: #f8f9fa;
+}
+main #third .top {
+  padding: 4rem 0rem;
+}
+main #third .bottom {
+  padding: 1.5rem 0rem;
+}
+main #third .bottom .box {
+  padding: 2rem 0rem;
+}
+main #third .bottom .box:hover {
+  background: rgb(92, 135, 191);
+  background: linear-gradient(90deg, rgb(92, 135, 191) 0%, rgb(173, 122, 150) 50%, rgb(244, 109, 112) 100%);
+}
+main #third .bottom .box:hover h3 {
+  color: white;
+}
+main #third .bottom .box:hover p {
+  color: white;
+}
+main #third .bottom .box .h3 {
+  margin: 3rem;
+  position: relative;
+}
+main #third .bottom .box .underline {
+  position: absolute;
+  padding: 0rem;
+  margin-left: 9rem;
+  padding-right: 4rem;
+  background-color: #f46d70;
+  border: 1px solid #f46d70;
+}
+main #third .bottom .box p {
+  color: rgb(108, 117, 125);
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 300;
+}
+main #fourth {
+  overflow: hidden;
+}
+main #fourth .top {
+  padding-bottom: 12rem;
+  padding-top: 5rem;
+}
+main #fourth .bottom img {
+  width: 100%;
+}
+main #fourth .bottom .textPart p {
+  color: rgb(108, 117, 125);
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0rem 0rem;
+}
+main #fourth .bottom .textPart .altText p {
+  margin: 0;
+  font-size: 30px;
+  color: #f46d70;
+  font-weight: 900;
+}
+main #fifth {
+  padding-top: 8rem;
+  overflow: hidden;
+}
+main #fifth .top .box {
+  position: relative;
+  padding: 0;
+}
+main #fifth .top .box img {
+  width: 100%;
+}
+main #fifth .top .box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 8rem 0rem;
+}
+main #fifth .top .box:hover .overlay {
+  opacity: 0.8;
+}
+main #fifth .bottom {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+main #fifth .bottom h2 {
+  color: #f46d70;
+  font-size: 40px;
+}
+main #fifth .bottom p {
+  font-size: 20px;
+}
+main #fifth .loremPart {
+  padding: 5rem;
+  background-color: #f8f9fa;
+}
+main #fifth .loremPart p {
+  color: rgb(108, 117, 125);
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 300;
+}
+main #fifth .loremPart .right {
+  display: flex;
+  align-items: center;
+  padding-top: 3.5rem;
+}
+main #fifth #second span i {
+  font-size: 100px;
+  color: #f46d70;
+}
+main #fifth #third {
+  padding: 5rem 0rem;
+  background: rgb(92, 135, 191);
+  background: linear-gradient(90deg, rgb(92, 135, 191) 0%, rgb(173, 122, 150) 50%, rgb(244, 109, 112) 100%);
+}
+main #fifth #third h2 {
+  color: white;
+  font-size: 40px;
+}
+main #fifth #third p {
+  color: white;
+  font-size: 20px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+main #fifth #third a {
+  border: 1px solid white;
+  padding: 0.5rem 3rem;
+  color: white;
+  border-radius: 3rem;
+}
+main #fifth #third a:hover {
+  background-color: white;
+  color: #f46d70;
+}
+main #fifth #fourth {
+  padding: 4rem 0rem;
+  background-color: #f8f9fa;
+}
+main #sixth {
+  overflow: hidden;
+  padding: 4rem 0rem;
+}
+main #sixth .top {
+  padding-bottom: 4rem;
+}
+main #sixth .top h2 {
+  font-size: 40px;
+}
+main #sixth .bottom .box {
+  position: relative;
+  padding: 0;
+}
+main #sixth .bottom .box:hover .overlay {
+  opacity: 0.8;
+}
+main #sixth .bottom .box img {
+  width: 100%;
+}
+main #sixth .bottom .box .overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #f46d70;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+  opacity: 0;
+  transition-duration: 0.6s;
+}
+main #seventh {
+  padding: 2rem 0rem;
+}
+main #seventh .right .sendNow {
+  text-align: center;
+}
+main #seventh .right .sendNow p {
+  cursor: pointer;
+  padding: 0.5rem 0rem;
+  border-radius: 4rem;
+  color: white;
+  background-color: #f46d70;
+  transition-duration: 0.4s;
+}
+main #seventh .right .sendNow:hover p {
+  background-color: rgb(50, 169, 173);
+}
+main #seventh .right input {
+  padding-right: 25rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  border: transparent;
+  border-bottom: 1px solid #83878a !important;
+}
+main #seventh .right input:focus {
+  outline-color: transparent;
+}
+main #seventh i {
+  margin-right: 2rem;
+  border: 1px solid #f46d70;
+  border-radius: 4rem;
+  background-color: #f46d70;
+  padding: 0.5rem;
+  color: white;
+}
+main #seventh h2 {
+  padding-right: 7rem;
+  font-size: 40px;
+  font-weight: bold;
+}
+main #seventh .abt {
+  color: rgb(108, 117, 125);
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0rem 0rem;
+}
+main #eigth {
+  padding: 5rem 0rem;
+  background-color: rgb(34, 34, 34);
+}
+main #eigth .inputSec {
+  margin-top: 2rem;
+}
+main #eigth .inputSec input {
+  background-color: transparent;
+  border: none;
+}
+main #eigth p {
+  margin-bottom: 16px;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(108, 117, 125);
+}
+main #eigth a {
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+main #eigth a:hover {
+  color: #f46d70;
+}
+main #eigth .underline {
+  border: 1px solid #83878a;
+  margin-left: 11rem;
+}
+main #eigth .wite {
+  display: inline;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+main #eigth .wite:hover {
+  color: #f46d70;
+}
+
+footer {
+  overflow: hidden;
+  background-color: black;
+  padding: 1rem 0rem;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
